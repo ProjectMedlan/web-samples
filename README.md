@@ -4,4 +4,4 @@ Repository for some HTML/Javascript/.... samples
 (maybe usefull to look up things I've already done)
 
 Table of content:  
-* Nothing
+* 20.02.2022: Added sample for place content vs. place items  
