@@ -1,0 +1,51 @@
+.main-grid
+{
+    display:grid;
+    
+    /* change/uncomment values here */
+
+    place-content: center;
+    /*
+    justify-content: center;
+    align-content: center;
+    */
+    
+    /*place-items: center;*/
+    /*
+    justify-items: center;
+    align-items: center;
+    */
+
+    grid-template-columns: repeat(3, 250px);
+    /* change column width to 1fr -> No free space on the left/right -> nothing to center
+    /*grid-template-columns: repeat(3, 1fr);*/
+
+    gap: 1rem;
+    min-height: 70vh;
+    width: (min(100vw -2rem, 70rem));
+    margin-inline: auto;
+    border: 5px solid rebeccapurple;
+}
+
+.card
+{
+    background-color: lavender;
+    padding: 5px;
+}
+
+h1
+{
+    text-align: center;
+    color: orange;
+}
+
+h2
+{
+    color: orange;
+    margin-bottom: 0px;
+}
+
+p
+{
+    margin-top: 0px;
+}
