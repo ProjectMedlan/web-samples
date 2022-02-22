@@ -1,0 +1,97 @@
+input[type="checkbox"].toggle
+{
+    /* hide checkbox */
+    opacity: 0;
+    position: absolute;
+    left: -9000px;
+    top: -9000px;
+}
+
+input[type="checkbox"].toggle + label
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+input[type="checkbox"].toggle + label::before
+{
+    content: "";
+    /* em scaling with font size */
+    width : 2em;
+    height: 1em;
+    background-color: #ddd;
+    border-radius: 1em;
+    margin-right: .25em;
+    background-color: hsl(10, 80%, 90%);
+
+    /* before element just contains the background to be animated */
+    transition: background-color 200ms ease-in-out;
+}
+
+input[type="checkbox"].toggle + label::after
+{
+    position: absolute;
+
+    /* note: em scaling with font size */
+
+    /* ok, without accessibility */
+    /*
+    content: ""; 
+    left: .1em;
+    width : 0.9em;
+    height: 0.9em;
+    */
+
+    /* change content for accessibility */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: "\2715";
+    font-size: .5em;
+    left: .2em;
+    width : 1.8em;
+    height: 1.8em;
+    color: white;
+
+    border-radius: 1em;
+    background-color: hsl(10, 80%, 60%);
+
+    /* after element contains the background (of the circle) and the position to be animated */
+    transition: background-color 200ms ease-in-out, transform 200ms ease-in-out;
+}
+
+/* accessibility feature */
+input[type="checkbox"].toggle:focus + label::before
+{
+outline: 1px solid black;
+}
+
+/* Checked state */
+input[type="checkbox"].toggle:checked + label::before
+{
+    background-color: hsl(157, 75%, 90%);
+}
+
+input[type="checkbox"].toggle:checked + label::after
+{
+    content: "\2713"; 
+    transform: translateX(100%);
+    background-color: hsl(157, 75%, 61%);
+}
+
+input[type="checkbox"].toggle:disabled + label
+{
+    color:#777
+}
+
+input[type="checkbox"].toggle:disabled + label::before
+{
+    background-color:#ccc
+}
+
+input[type="checkbox"].toggle:disabled + label::after
+{
+    background-color:#777;
+}
