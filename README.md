@@ -10,3 +10,7 @@ Table of content:
 * 20.02.2022: Added sample for place content vs. place items  
 * 17.07.2022: Added sample for a ripple button effect
 
+Interesting Videos:
+Lazy Load Images with blur preview & pulse (https://www.youtube.com/watch?v=hJ7Rg1821Q0)
+New Array Methods (with, toSorted, ToSpliced) (https://www.youtube.com/watch?v=3CBD5JZJJKw)
+How to create a responsive HTML table (https://www.youtube.com/watch?v=czZ1PvNW5hk)
