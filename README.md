@@ -9,6 +9,7 @@ Table of content:
 * 20.02.2022: Added sample for a basic PWA Setup
 * 20.02.2022: Added sample for place content vs. place items  
 * 17.07.2022: Added sample for a ripple button effect
+* 27.10.2024: Added sample for a conic gradiant effect
 
 Interesting Videos:
 Lazy Load Images with blur preview & pulse (https://www.youtube.com/watch?v=hJ7Rg1821Q0)
